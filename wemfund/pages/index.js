@@ -1,3 +1,4 @@
+import Features from '@/components/Features'
 import Hero from '@/components/Hero'
 import HowToUse from '@/components/HowToUse'
 import NavBar from '@/components/NavBar'
@@ -16,6 +17,7 @@ export default function Home() {
       <NavBar/>
       <Hero/>
       <HowToUse/>
+      <Features/>
     </>
   )
 }

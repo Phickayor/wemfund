@@ -21,7 +21,8 @@ function HowToUse() {
               <h1>Create an Account</h1>
             </div>
             <p className="text-sm mx-3 px-12 text-left border-l-4 text-3xl font-semibold">
-              Sign up for an account with your name, email and phone number.
+              Sign up for an account with <br /> your name, email and phone
+              number.
             </p>
           </div>
           <div className=" mx-auto  space-y-2">
@@ -30,7 +31,8 @@ function HowToUse() {
               <h1>Set Up Your Profile</h1>
             </div>
             <p className="text-sm mx-3 px-12 text-left border-l-4 text-3xl font-semibold">
-              Sign up for an account with your name, email and phone number.
+              Sign up for an account with <br /> your name, email and phone
+              number.
             </p>
           </div>
           <div className=" mx-auto   space-y-2">
@@ -39,7 +41,8 @@ function HowToUse() {
               <h1>Pay Ride </h1>
             </div>
             <p className="text-sm mx-3 px-12 text-left border-l-4 text-3xl font-semibold">
-              Sign up for an account with your name, email and phone number.
+              Sign up for an account with <br /> your name, email and phone
+              number.
             </p>
           </div>
           <div className=" mx-auto  space-y-2">
@@ -48,7 +51,8 @@ function HowToUse() {
               <h1>View Transaction History</h1>
             </div>
             <p className="text-sm mx-3 px-12 text-left border-l-4 text-3xl font-semibold">
-              Sign up for an account with your name, email and phone number.
+              Sign up for an account with <br /> your name, email and phone
+              number.
             </p>
           </div>
         </div>
