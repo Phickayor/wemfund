@@ -7,7 +7,7 @@ function NavBar() {
     <FontAwesomeIcon icon={faBars} className="p-4 text-4xl " />
   );
   return (
-    <div className="text-textcolor sticky top-0 p-6 pb-5 flex justify-between border-b-2 border-[bordercolor]">
+    <div className="text-textcolor sticky bg-white z-10 top-0 p-6 pb-5 flex justify-between border-b-2 border-[bordercolor]">
       <div className="flex ">
         <img src="/favicon.ico" />
         <h1 className="self-center p-2 text-2xl font-[open sans]">Wemfund</h1>
@@ -21,9 +21,6 @@ function NavBar() {
         </a>
         <a href="#contact">
           <li className="hover:list-disc">Contact us</li>
-        </a>
-        <a href="#services">
-          <li className="hover:list-disc">Services</li>
         </a>
       </ul>
       <div className="lg:hidden self-center">{harmburger}</div>

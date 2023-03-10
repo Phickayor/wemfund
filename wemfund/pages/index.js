@@ -1,4 +1,5 @@
 import Hero from '@/components/Hero'
+import HowToUse from '@/components/HowToUse'
 import NavBar from '@/components/NavBar'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -14,6 +15,7 @@ export default function Home() {
       </Head> */}
       <NavBar/>
       <Hero/>
+      <HowToUse/>
     </>
   )
 }

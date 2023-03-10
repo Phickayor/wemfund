@@ -1,14 +1,13 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Hero() {
   return (
     <div className="text-darkblue">
-      <div className="flex">
-        <div className="w-1/2  flex flex-col p-8 px-10">
+      <div className="flex p-4 px-10">
+        <div className="md:w-1/2 self-center ">
           <h1 className="text-5xl font-semibold leading-[52px] font-[open sans]">
-            Pay rides <br></br>with ease
+            Pay rides with ease
           </h1>
-          <p className="text-xl my-5 font-[poppins]">
+          <p className="text-xl my-5 font-[poppins] w-1/2 md:w-full">
             With Wemfund you can easily pay for your ride on your mobile phone
             anywhere anytime.
           </p>
@@ -16,14 +15,17 @@ function Hero() {
             Get started
           </button>
         </div>
-        <img src="/SmartCar.png" />
+        <img
+          src="/SmartCar.png"
+          className="w-1/2 absolute md:relative right-0 "
+        />
       </div>
-      <div className="flex justify-between px-10 my-5">
-        <p className="self-center font-semibold text-xl ">
+      <div className="flex justify-between mx-auto w-11/12 my-5">
+        <p className="w-1/2 self-center font-semibold text-xl ">
           Easy Payment Gateway, Sign up for free now!
         </p>
 
-        <div className="flex space-x-10">
+        <div className="flex justify-end  space-x-10 w-1/2 absolute right-5 md:relative ">
           <img src="/PlayStore.png" />
           <img src="/AppStore.png" />
         </div>
