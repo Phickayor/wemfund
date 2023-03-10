@@ -14,7 +14,7 @@ module.exports = {
         textcolor:'#0B0C11',
         bgcolor: '#F4F4F4',
         darkblue: '#131725',
-        btncolor: '#ff9b00'
+        bordercolor: '#D5D5D5'
       }
     },
   },
