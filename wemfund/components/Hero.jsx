@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Hero() {
   return (
     <div className="text-darkblue">
