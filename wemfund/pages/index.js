@@ -1,4 +1,5 @@
 import Features from '@/components/Features'
+import Footer from '@/components/Footer'
 import Hero from '@/components/Hero'
 import HowToUse from '@/components/HowToUse'
 import NavBar from '@/components/NavBar'
@@ -20,6 +21,7 @@ export default function Home() {
       <HowToUse/>
       <Features/>
       <Reviews/>
+      <Footer/>
     </>
   )
 }
