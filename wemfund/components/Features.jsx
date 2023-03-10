@@ -20,7 +20,7 @@ function Features() {
         </div>
       </div>
       <div>
-        <div className="bg-darkblue  w-20 h-20 rounded-full">
+        <div className="bg-darkblue w-20 h-20 rounded-full">
           <img src="/multipayment.png" className="rounded-full w-20 h-20 p-2" />
         </div>
         <div className="space-y-4 mt-2">
