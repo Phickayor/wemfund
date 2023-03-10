@@ -3,7 +3,7 @@ import React from "react";
 function DownloadApp() {
   return (
     <div className="mx-auto w-10/12 text-center my-10">
-      <h1 className="text-4xl font-semibold leading-[52px] font-[open sans]">
+      <h1 className="text-4xl font-semibold leading-[52px] font-[open sans] text-darkblue">
         Download the Wemfund App
       </h1>
       <p>Join over 200+ people already growing with Wemfund</p>

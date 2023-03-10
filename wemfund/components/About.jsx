@@ -2,8 +2,8 @@ import React from "react";
 
 function About() {
   return (
-    <div className="my-5 font-[open sans] space-y-4 text-center w-9/12 mx-auto">
-      <h1 className="text-[#4749FF] font-semibold text-3xl my-5">
+    <div className="my-5 text-textcolor font-[open sans] space-y-4 text-center w-9/12 mx-auto">
+      <h1 className="text-darkblue font-semibold text-3xl my-5">
         About Wemfund
       </h1>
       <p className="text-xl">
