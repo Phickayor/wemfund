@@ -1,6 +1,7 @@
 import About from '@/components/About'
 import Footer from '@/components/Footer'
 import NavBar from '@/components/NavBar'
+import Vision from '@/components/Vision'
 import React from 'react'
 
 function about() {
@@ -8,6 +9,7 @@ function about() {
     <div>
         <NavBar/>
         <About/>
+        <Vision/>
         <Footer/>
     </div>
   )
