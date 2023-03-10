@@ -1,5 +1,6 @@
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 import React from "react";
 
 function NavBar() {
@@ -13,15 +14,15 @@ function NavBar() {
         <h1 className="self-center p-2 text-2xl font-[open sans]">Wemfund</h1>
       </div>
       <ul className="lg:flex hidden space-x-10 font-semibold text-xl px-10 self-center">
-        <a href="#home">
+        <Link href="/">
           <li className="hover:list-disc">Home</li>
-        </a>
-        <a href="#about">
+        </Link>
+        <Link href="/about">
           <li className="hover:list-disc">About</li>
-        </a>
-        <a href="#contact">
+        </Link>
+        <Link href="/contact">
           <li className="hover:list-disc">Contact us</li>
-        </a>
+        </Link>
       </ul>
       <div className="lg:hidden self-center">{harmburger}</div>
     </div>
