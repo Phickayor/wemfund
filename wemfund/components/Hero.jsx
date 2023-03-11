@@ -2,12 +2,12 @@ import React from "react";
 function Hero() {
   return (
     <div className="text-darkblue">
-      <div className="flex p-4 px-10">
-        <div className="md:w-1/2 self-center ">
-          <h1 className="text-5xl font-semibold leading-[52px] font-[open sans]">
-            Pay rides with ease
+      <div className="flex py-4 md:px-10 px-5">
+        <div className="md:w-1/2 w-5/6 self-center ">
+          <h1 className="md:text-5xl text-4xl font-semibold md:leading-[72px] leading-[50px] font-[open sans]">
+            Pay Ride <br className="md:hidden" /> With Ease
           </h1>
-          <p className="text-xl my-5 font-[poppins] w-1/2 md:w-full">
+          <p className="md:text-xl text-lg my-5 font-[poppins] w-full">
             With Wemfund you can easily pay for your ride on your mobile phone
             anywhere anytime.
           </p>
@@ -15,19 +15,21 @@ function Hero() {
             Get started
           </button>
         </div>
-        <img
-          src="/SmartCar.png"
-          className="w-1/2 absolute md:relative right-0 "
-        />
+        <div className="w-2/3 md:w-1/2 flex flex-col justify-center">
+          <img
+            src="/SmartCar.png"
+            className="w-full h-1/2 md:h-full relative right-0 "
+          />
+        </div>
       </div>
-      <div className="flex justify-between mx-auto w-11/12 my-5">
-        <p className="w-1/2 self-center font-semibold text-xl ">
+      <div className="md:flex mx-auto w-11/12 text-center md:text-left my-5">
+        <p className="md:w-1/2 self-center my-4 md:my-0 font-semibold text-xl ">
           Easy Payment Gateway, Sign up for free now!
         </p>
 
-        <div className="flex justify-end  space-x-10 w-1/2 absolute right-5 md:relative ">
-          <img src="/PlayStore.png" />
-          <img src="/AppStore.png" />
+        <div className="flex md:justify-end w-2/3 md:w-1/2 relative ">
+          <img src="/PlayStore.png" className="w-2/3 md:w-fit md:mx-4 m-2" />
+          <img src="/AppStore.png" className="w-2/3 md:w-fit md:mx-4 m-2" />
         </div>
       </div>
     </div>

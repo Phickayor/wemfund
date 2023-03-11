@@ -5,17 +5,22 @@ import HowToUse from '@/components/HowToUse'
 import NavBar from '@/components/NavBar'
 import Reviews from '@/components/Reviews'
 import Head from 'next/head'
-import Image from 'next/image'
+// The following import prevents a Font Awesome icon server-side rendering bug,
+// where the icons flash from a very large icon down to a properly sized one:
+import '@fortawesome/fontawesome-svg-core/styles.css';
+// Prevent fontawesome from adding its CSS since we did it manually above:
+import { config } from '@fortawesome/fontawesome-svg-core';
+config.autoAddCss = false; /* eslint-disable import/first */
 
 export default function Home() {
   return (
     <>
-      {/* <Head>
+      <Head>
         <title>WemFund</title>
         <meta name="description" content="Payment for trips" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-      </Head> */}
+      </Head>
       <NavBar/>
       <Hero/>
       <HowToUse/>
