@@ -1,25 +1,27 @@
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React, { useState } from "react";
 
 function NavBar() {
-  // const [sideBarWidth, setSideBarWidth] = useState("300px");
-  // const [btn, setBtn] = useState("");
-  // const close = <FontAwesomeIcon icon={faClose} className="p-4 text-4xl " />;
+  const [sideBarWidth, setSideBarWidth] = useState("0%");
+  const close = (
+    <FontAwesomeIcon
+      icon={faClose}
+      className="py-3 px-4 text-4xl border-2 rounded-2xl "
+    />
+  );
   const harmburger = (
     <FontAwesomeIcon icon={faBars} className="p-4 text-4xl " />
   );
 
-  // function toggleSideBar() {
-  //   if (sideBarWidth === "0px") {
-  //     setSideBarWidth("300px");
-  //     setBtn(close);
-  //   } else {
-  //     setSideBarWidth("0px");
-  //     setBtn(sideMenu);
-  //   }
-  // }
+  function toggleSideBar() {
+    if (sideBarWidth === "0%") {
+      setSideBarWidth("100%");
+    } else {
+      setSideBarWidth("0%");
+    }
+  }
 
   return (
     <div className="text-textcolor sticky bg-white z-10 top-0 p-6 pb-5 flex justify-between border-b-2 border-[bordercolor]">
@@ -27,7 +29,7 @@ function NavBar() {
         <img src="/favicon.ico" />
         <h1 className="self-center p-2 text-2xl font-[open sans]">Wemfund</h1>
       </div>
-      <ul className="lg:flex hidden space-x-10 font-semibold text-xl px-10 self-center">
+      <ul className="md:flex hidden space-x-10 font-semibold text-xl px-10 self-center">
         <Link href="/">
           <li className="hover:list-disc">Home</li>
         </Link>
@@ -38,27 +40,34 @@ function NavBar() {
           <li className="hover:list-disc">Contact us</li>
         </Link>
       </ul>
-      <div className="lg:hidden self-center cursor-pointer">{harmburger}</div>
-      {/* <div
-        className="absolute right-0 bg-darkblue text-white flex-col flex"
+      <div
+        className="md:hidden self-center cursor-pointer"
+        onClick={() => toggleSideBar()}
+      >
+        {harmburger}
+      </div>
+      <div
+        className="absolute duration-[1.5s] right-0 top-0 l h-screen fixed overflow-y-scroll bg-darkblue text-white flex-col flex"
         style={{ width: sideBarWidth }}
       >
-        <button className="sideMenuBtn" onClick={() => toggleSideBar()}>
-         {sideBarBtn} 
+        <button
+          className="absolute right-10 top-2 "
+          onClick={() => toggleSideBar()}
+        >
+          {close}
         </button>
-        <a href="#about" onClick={() => toggleSideBar()}>
-          Home
-        </a>
-        <a href="#projects" onClick={() => toggleSideBar()}>
-          Projects
-        </a>
-        <a href="#skills" onClick={() => toggleSideBar()}>
-          Skills
-        </a>
-        <a href="#contact" onClick={() => toggleSideBar()}>
-          Contact
-        </a>
-      </div> */}
+        <div className="flex flex-col mx-auto w-10/12 my-40 font-[poppins] text-2xl space-y-20">
+          <Link href="/" onClick={() => toggleSideBar()}>
+            Home
+          </Link>
+          <Link href="/about" onClick={() => toggleSideBar()}>
+            About
+          </Link>
+          <Link href="/contact" onClick={() => toggleSideBar()}>
+            Contact
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
