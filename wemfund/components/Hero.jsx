@@ -27,9 +27,9 @@ function Hero() {
           Easy Payment Gateway, Sign up for free now!
         </p>
 
-        <div className="flex md:justify-end w-2/3 md:w-1/2 relative ">
-          <img src="/PlayStore.png" className="w-2/3 md:w-fit md:mx-4 m-2" />
-          <img src="/AppStore.png" className="w-2/3 md:w-fit md:mx-4 m-2" />
+        <div className="flex md:justify-end justify-center  md:w-1/2 relative ">
+          <img src="/PlayStore.png" className="md:mx-4 m-2" />
+          <img src="/AppStore.png" className="md:mx-4 m-2" />
         </div>
       </div>
     </div>
