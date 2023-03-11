@@ -3,8 +3,8 @@ import React from "react";
 function Footer() {
   return (
     <div className="bg-darkblue text-white">
-      <div className="grid grid-cols-2 lg:grid-cols-3 text-[poppins] px-20  py-5 space-x-10 ">
-        <div>
+      <div className="flex flex-wrap justify-between text-[poppins] md:px-20 px-10  py-5  ">
+        <div className="my-4">
           <h1 className="text-2xl font-semibold my-4">Company</h1>
           <ul className="space-y-4">
             <li>About Us</li>
@@ -13,7 +13,7 @@ function Footer() {
             <li>Our services</li>
           </ul>
         </div>
-        <div>
+        <div className="my-4">
           <h1 className="text-2xl font-semibold my-4">Resources</h1>
           <ul className="space-y-4">
             <li>Privacy and Policy</li>
@@ -22,12 +22,12 @@ function Footer() {
             <li>Security</li>
           </ul>
         </div>
-        <div>
+        <div className="my-4">
           <h1 className="text-2xl font-semibold my-4">Address</h1>
           <p className="mt-4">01 stong avenue, ikeja Lagos State.</p>
         </div>
       </div>
-      <div className="px-20 flex space-x-5">
+      <div className="md:px-20 px-10 flex space-x-5">
         <img src="/favicon.ico" />
         <p className="self-center font-[open sans]">
           Wemfund &copy; 2023 wemfund.com
