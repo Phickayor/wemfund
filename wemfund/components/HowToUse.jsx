@@ -2,21 +2,21 @@ import React from "react";
 
 function HowToUse() {
   return (
-    <div className="flex bg-darkblue text-white my-20 h-full">
-      <div className="w-1/2 px-5 ">
-        <div className="bg-white flex flex-col justify-center rounded-2xl mx-auto w-9/12 h-full py-10">
+    <div className="md:flex font-[poppins] bg-darkblue text-white my-20">
+      <div className="px-5 w-1/2 hidden md:block">
+        <div className="bg-white rounded-2xl flex flex-col justify-end h-full mx-auto w-9/12 py-10">
           <img src="/howToUseImage.png" />
         </div>
       </div>
-      <div className="w-1/2 py-5">
-        <div className="mx-auto my-2">
-          <h1 className="text-center font-bold text-5xl font-[open sans]">
+      <div className="md:w-1/2 py-5">
+        <div className=" my-2">
+          <h1 className="text-center font-bold text-4xl font-[opensans]">
             How Wemfund works
           </h1>
         </div>
-        <div className="space-y-8 py-6 w-11/12 mx-auto">
+        <div className="space-y-8 py-6 md:w-11/12 w-10/12 mx-auto">
           <div className=" mx-auto space-y-2">
-            <div className="flex space-x-10 text-3xl font-semibold">
+            <div className="flex space-x-10 text-2xl font-semibold">
               <h1>01</h1>
               <h1>Create an Account</h1>
             </div>
@@ -26,7 +26,7 @@ function HowToUse() {
             </p>
           </div>
           <div className=" mx-auto  space-y-2">
-            <div className="flex space-x-10 text-3xl font-semibold">
+            <div className="flex space-x-10 text-2xl font-semibold">
               <h1>02</h1>
               <h1>Set Up Your Profile</h1>
             </div>
@@ -35,8 +35,8 @@ function HowToUse() {
               number.
             </p>
           </div>
-          <div className=" mx-auto   space-y-2">
-            <div className="flex space-x-10 text-3xl font-semibold">
+          <div className=" mx-auto space-y-2">
+            <div className="flex space-x-10 text-2xl font-semibold">
               <h1>03</h1>
               <h1>Pay Ride </h1>
             </div>
@@ -46,7 +46,7 @@ function HowToUse() {
             </p>
           </div>
           <div className=" mx-auto  space-y-2">
-            <div className="flex space-x-10 text-3xl font-semibold">
+            <div className="flex space-x-10 text-2xl font-semibold">
               <h1>04</h1>
               <h1>View Transaction History</h1>
             </div>
