@@ -2,12 +2,12 @@ import React from "react";
 
 function Features() {
   return (
-    <div className="my-10 text-[open sans] flex text-textcolor justify-around space-x-10 mx-auto w-11/12">
-      <div>
-        <div className="bg-darkblue  w-20 h-20 rounded-full">
+    <div className="font-[poppins] my-10 text-[open sans] flex flex-col md:flex-row text-textcolor justify-around space-y-10 md:space-y-0 md:space-x-10 mx-auto w-11/12">
+      <div className=" text-center md:text-left mx-auto w-10/12 md:border-none border-b-2  border-dashed border-bordercolor pb-6 ">
+        <div className="bg-darkblue md:mx-0 mx-auto w-20 h-20 rounded-full">
           <img
             src="/Online payment.png"
-            className="rounded-full w-20 h-20 p-2"
+            className="rounded-full w-20 h-20 p-2 "
           />
         </div>
         <div className="space-y-4 mt-2">
@@ -19,8 +19,8 @@ function Features() {
           </p>
         </div>
       </div>
-      <div>
-        <div className="bg-darkblue w-20 h-20 rounded-full">
+      <div className=" text-center md:text-left mx-auto w-10/12 md:border-none border-b-2 border-dashed border-bordercolor pb-6 ">
+        <div className="bg-darkblue md:mx-0 mx-auto w-20 h-20 rounded-full">
           <img src="/multipayment.png" className="rounded-full w-20 h-20 p-2" />
         </div>
         <div className="space-y-4 mt-2">
@@ -34,8 +34,8 @@ function Features() {
           </p>
         </div>
       </div>
-      <div>
-        <div className="bg-darkblue  w-20 h-20 rounded-full">
+      <div className=" text-center md:text-left mx-auto w-10/12 md:border-none border-b-2 border-dashed border-bordercolor pb-6 ">
+        <div className="bg-darkblue md:mx-0  mx-auto w-20 h-20 rounded-full">
           <img src="/nfc payment.png" className="rounded-full w-20 h-20 p-2" />
         </div>
         <div className="space-y-4 mt-2">
