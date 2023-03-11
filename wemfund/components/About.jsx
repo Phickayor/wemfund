@@ -9,8 +9,7 @@ function About() {
       <p className="text-xl">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud
-        amet.dydshasuhjhjachjchjsjcdjaCKJHSKJHxcHUUFeyFiquIOhsluiqhwIO
+        veniam consequat sunt nostrud amet.
       </p>
     </div>
   );
