@@ -3,12 +3,12 @@ function Hero() {
   return (
     <div className="text-darkblue">
       <div className="flex py-4 md:px-10 px-5">
-        <div className="md:w-1/2 w-5/6 self-center ">
+        <div className="md:w-1/2 px-5 w-5/6 self-center ">
           <h1 className="md:text-5xl text-4xl font-semibold md:leading-[72px] leading-[50px] font-[open sans]">
             Pay Ride <br className="md:hidden" /> With Ease
           </h1>
           <p className="md:text-xl text-lg my-5 font-[poppins] w-full">
-            With Wemfund you can easily pay for your ride on your mobile phone
+            With Trippayer you can easily pay for your ride on your mobile phone
             anywhere anytime.
           </p>
           <button className="bg-darkblue text-white w-fit px-10 py-3 mt-5 font-[poppins] rounded-2xl">

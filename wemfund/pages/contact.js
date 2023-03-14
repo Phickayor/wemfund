@@ -7,11 +7,18 @@ import React from 'react'
 import '@fortawesome/fontawesome-svg-core/styles.css';
 // Prevent fontawesome from adding its CSS since we did it manually above:
 import { config } from '@fortawesome/fontawesome-svg-core';
+import Head from 'next/head';
 config.autoAddCss = false; /* eslint-disable import/first */
 
 function contact() {
   return (
     <div className='bg-darkblue'>
+    <Head>
+      <title>Trippayer | Contact</title>
+      <meta name="description" content="Payment for trips" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
         <NavBar/>
         <div className='h-52 w-full'>
           <img src='/ContactImage.png' className='h-52 w-full'/>

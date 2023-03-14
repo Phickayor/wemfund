@@ -27,7 +27,7 @@ function NavBar() {
     <div className="text-textcolor sticky bg-white z-10 top-0 p-6 pb-5 flex justify-between border-b-2 border-[bordercolor]">
       <div className="flex ">
         <img src="/favicon.ico" />
-        <h1 className="self-center p-2 text-2xl font-[open sans]">Wemfund</h1>
+        <h1 className="self-center p-2 text-2xl font-[open sans]">Trippayer</h1>
       </div>
       <ul className="md:flex hidden space-x-10 font-semibold text-xl px-10 self-center">
         <Link href="/">

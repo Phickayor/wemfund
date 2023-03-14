@@ -9,7 +9,7 @@ function Reviews() {
       <div className="w-full mx-auto self-center space-y-4 text-center">
         <h1 className="text-2xl mx-auto w-9/12">The Highest Rating App</h1>
         <h1 className="font-semibold text-3xl font-semibold text-darkblue">
-          Wemfund App
+          Trippayer App
         </h1>
         <h1 className="text-3xl font-bold text-darkblue">99%</h1>
         <h1 className="text-3xl font-bold text-darkblue">

@@ -8,7 +8,7 @@ function Footer() {
           <h1 className="text-2xl font-semibold my-4">Company</h1>
           <ul className="space-y-4">
             <li>About Us</li>
-            <li>The Wemfund Blog</li>
+            <li>The Trippayer Blog</li>
             <li>Join our team</li>
             <li>Our services</li>
           </ul>
@@ -30,7 +30,7 @@ function Footer() {
       <div className="md:px-20 px-10 flex space-x-5">
         <img src="/favicon.ico" />
         <p className="self-center font-[open sans]">
-          Wemfund &copy; 2023 wemfund.com
+          Trippayer &copy; 2023 Trippayer.com
         </p>
       </div>
     </div>

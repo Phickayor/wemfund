@@ -12,11 +12,7 @@ function Features() {
         </div>
         <div className="space-y-4 mt-2">
           <h1 className="font-semibold text-darkblue text-2xl">Pay for Ride</h1>
-          <p>
-            Millions of Nigerians trust us with their money. We ensure that your
-            money is safe by complying with he highest global security
-            standards.
-          </p>
+          <p>With Trippayers you can pay for your rides seamlessly</p>
         </div>
       </div>
       <div className=" text-center md:text-left mx-auto w-10/12 md:border-none border-b-2 border-dashed border-bordercolor pb-6 ">
@@ -28,9 +24,7 @@ function Features() {
             Recieve Funds
           </h1>
           <p className="">
-            Millions of Nigerians trust us with their money. We ensure that your
-            money is safe by complying with he highest global security
-            standards.
+            Trippayers gives you abilily to receive funds as a driver
           </p>
         </div>
       </div>
@@ -39,14 +33,8 @@ function Features() {
           <img src="/nfc payment.png" className="rounded-full w-20 h-20 p-2" />
         </div>
         <div className="space-y-4 mt-2">
-          <h1 className="font-semibold text-darkblue text-2xl">
-            Top Up For Emergency
-          </h1>
-          <p>
-            Millions of Nigerians trust us with their money. We ensure that your
-            money is safe by complying with he highest global security
-            standards.
-          </p>
+          <h1 className="font-semibold text-darkblue text-2xl">Top Up funds</h1>
+          <p>You can topup your wallet from your bank with ease</p>
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@ function HowToUse() {
       <div className="md:w-1/2 py-5">
         <div className=" my-2">
           <h1 className="text-center font-bold text-4xl font-[opensans]">
-            How Wemfund works
+            How Trippayer works
           </h1>
         </div>
         <div className="space-y-8 py-6 md:w-11/12 w-10/12 mx-auto">
