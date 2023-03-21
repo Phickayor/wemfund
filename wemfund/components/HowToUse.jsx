@@ -3,7 +3,7 @@ import React from "react";
 function HowToUse() {
   return (
     <div className="flex font-[poppins] text-darkblue my-10 mx-auto w-10/12">
-      <div className="border-2 flex bg-purple ">
+      <div className="flex bg-purple ">
         <img src="/howToUseImage.png" className="self-center" />
       </div>
       <div className="flex flex-col justify-end w-full py-10">
