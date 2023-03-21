@@ -24,8 +24,8 @@ function NavBar() {
   }
 
   return (
-    <div className="text-textcolor sticky bg-white z-10 top-0 p-6 pb-5 flex justify-between border-b-2 border-[bordercolor]">
-      <div className="flex ">
+    <div className="text-textcolor sticky bg-white z-10 top-0 p-3 flex justify-between ">
+      <div className="flex px-10 ">
         <img src="/favicon.ico" />
         <h1 className="self-center p-2 text-2xl font-[open sans]">Trippayer</h1>
       </div>
