@@ -18,14 +18,14 @@ function ContactForm() {
     <FontAwesomeIcon icon={faFacebook} className="font-semibold text-4xl" />
   );
   return (
-    <div className="my-10 mx-auto w-10/12 flex md:flex-row flex-col justify-around font-[poppins] text-white ">
+    <div className="my-10 mx-auto w-10/12 flex md:flex-row flex-col justify-around font-[poppins]">
       <div className="px-10 md:w-1/2">
         <div className="mx-auto w-10/12 my-10 h-full">
-          <h1 className="font-bold text-3xl my-4">Contact Us</h1>
-          <p>
+          <h1 className="font-bold text-darkblue text-4xl my-4">Contact Us</h1>
+          <p className="text-textcolor text-xl">
             Fill up the form and get a response from our team within 24 hours
           </p>
-          <ul className="my-10 space-y-5">
+          <ul className="my-10 space-y-5 text-xl">
             <li>{phone} &nbsp; +2347025044627</li>
             <li>{mail} &nbsp; tapeyy@gmail.com</li>
             <li>{location} &nbsp; Allen road ikeja</li>
@@ -38,21 +38,21 @@ function ContactForm() {
         </div>
       </div>
 
-      <div className="md:w-1/2 ">
-        <form className="mx-auto w-10/12 my-10 h-full">
-          <label className="p-2 m">Name</label>
+      <div className="md:w-1/2 text-white text-xl">
+        <form className="bg-darkblue px-10 py-20 rounded-2xl mx-auto w-10/12 h-fit">
+          <label className="">Name</label>
           <input
-            className="text-textcolor rounded-xl block p-2 m-2 w-full md:w-10/12"
+            className="text-textcolor rounded-md block p-2 my-3 w-full"
             type="text"
           />
-          <label className="p-2 mt-4">Email</label>
+          <label className="">Email</label>
           <input
-            className="text-textcolor rounded-xl block p-2 m-2 w-full md:w-10/12"
+            className="text-textcolor rounded-md block p-2 my-3 w-full "
             type="text"
           />
-          <label className="p-2 mt-4">Message</label>
+          <label className="p-2">Message</label>
           <textarea
-            className="text-textcolor rounded-xl block p-2 m-2 w-full md:w-10/12"
+            className="text-textcolor rounded-md block p-2 my-3 w-full"
             type="text"
           />
 
