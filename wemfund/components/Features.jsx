@@ -11,7 +11,7 @@ function Features() {
           />
         </div>
         <div className="space-y-2 mt-4">
-          <h1 className="font-semibold text-darkblue text-3xl">Pay for Ride</h1>
+          <h1 className="font-semibold text-darkblue text-3xl">Pay For Ride</h1>
           <p className="text-xl">With trippayers you can pay for your rides seamlessly</p>
         </div>
       </div>
