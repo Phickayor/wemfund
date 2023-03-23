@@ -18,10 +18,10 @@ function ContactForm() {
     <FontAwesomeIcon icon={faFacebook} className="font-semibold text-4xl" />
   );
   return (
-    <div className="my-10 mx-auto w-10/12 flex md:flex-row flex-col justify-around font-[poppins]">
+    <div className="my-10 mx-auto md:w-10/12 w-11/12 flex md:flex-row flex-col justify-around font-[poppins]">
       <div className="px-10 md:w-1/2">
-        <div className="mx-auto w-10/12 my-10 h-full">
-          <h1 className="font-bold text-darkblue text-4xl my-4">Contact Us</h1>
+        <div className="mx-auto md:w-10/12 my-10 h-full">
+          <h1 className="font-bold text-darkblue md:text-4xl text-2xl my-4">Contact Us</h1>
           <p className="text-textcolor text-xl">
             Fill up the form and get a response from our team within 24 hours
           </p>
@@ -38,8 +38,8 @@ function ContactForm() {
         </div>
       </div>
 
-      <div className="md:w-1/2 text-white text-xl">
-        <form className="bg-darkblue px-10 py-20 rounded-2xl mx-auto w-10/12 h-fit">
+      <div className="md:w-1/2 text-white md:text-2xl text-xl">
+        <form className="bg-darkblue px-10 py-20 rounded-2xl mx-auto md:w-10/12 h-fit">
           <label className="">Name</label>
           <input
             className="text-textcolor rounded-md block p-2 my-3 w-full"
