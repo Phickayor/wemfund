@@ -8,7 +8,7 @@ function NavBar() {
   const close = (
     <FontAwesomeIcon
       icon={faClose}
-      className="py-3 px-4 text-4xl border-2 rounded-2xl "
+      className="py-3 px-4 text-4xl font-semibold text-textcolor "
     />
   );
   const harmburger = (
@@ -51,7 +51,7 @@ function NavBar() {
         style={{ width: sideBarWidth }}
       >
         <button
-          className="absolute right-10 top-2 "
+          className="absolute right-5 top-8 bg-white rounded-full w-16 h-16"
           onClick={() => toggleSideBar()}
         >
           {close}
