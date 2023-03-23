@@ -2,7 +2,7 @@ import React from "react";
 
 function Features() {
   return (
-    <div className="font-[poppins] my-10 mx-auto md:w-10/12 w-11/12 font-[poppins] flex flex-col md:flex-row text-textcolor space-y-10 md:space-y-0 space-x-0 md:space-x-10">
+    <div className="font-[poppins] my-10 mx-auto w-10/12 font-[poppins] flex flex-col md:flex-row text-textcolor space-y-10 md:space-y-0 space-x-0 md:space-x-10">
       <div className=" text-center md:text-left md:border-none border-b-2  border-dashed border-bordercolor pb-6 ">
         <div className="bg-darkblue md:mx-0 mx-auto w-24 h-24 rounded-full flex">
           <img
