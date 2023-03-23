@@ -30,9 +30,9 @@ function NavBar() {
         <h1 className="self-center p-2 text-2xl font-[open sans]">Trippayer</h1>
       </div>
       <ul className="md:flex hidden space-x-10 font-semibold text-xl px-10 self-center">
-        <Link href="/">
+        {/* <Link href="/">
           <li className="hover:list-disc">Home</li>
-        </Link>
+        </Link> */}
         <Link href="/about">
           <li className="hover:list-disc">About</li>
         </Link>
