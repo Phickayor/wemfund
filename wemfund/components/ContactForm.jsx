@@ -39,7 +39,7 @@ function ContactForm() {
       </div>
 
       <div className="md:w-1/2 text-white md:text-2xl text-xl">
-        <form className="bg-darkblue px-10 py-20 rounded-2xl mx-auto md:w-10/12 h-fit">
+        <form className="bg-darkblue px-10 md:py-20 py-10 rounded-2xl mx-auto md:w-10/12 h-fit">
           <label className="">Name</label>
           <input
             className="text-textcolor rounded-md block p-2 my-3 w-full"
