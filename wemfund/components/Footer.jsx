@@ -16,9 +16,9 @@ function Footer() {
           <p className="my-4 w-11/12 font-normal text-2xl">TripPayer is a payment gateway which can be used to make payment for trips in nigeria</p>
 
           <div className="flex mt-10 space-x-4">
-            <a href="">{instagram}</a>
+            <a href="https://www.instagram.com/trippayer/">{instagram}</a>
             <a href="">{facebook}</a>
-            <a href="">{instagram}</a>
+            <a href="https://www.instagram.com/trippayer/">{instagram}</a>
             <a href="">{facebook}</a>
           </div>
         </div>

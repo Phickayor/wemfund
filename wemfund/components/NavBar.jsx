@@ -26,7 +26,7 @@ function NavBar() {
   return (
     <div className="text-textcolor sticky bg-white font-[poppins] z-10 top-0 md:p-3 p-2 flex justify-between ">
       <div className="flex md:px-10 px-2 ">
-        <img src="/darklogo.png" className="md:h-24 w-full h-20" />
+        <img src="/darklogo.png" className="h-24 w-full" />
         {/* <h1 className="self-center p-2 text-2xl font-[poppins]">TripPayer</h1> */}
       </div>
       <ul className="md:flex hidden space-x-10 font-semibold text-xl px-10 self-center">
