@@ -26,9 +26,9 @@ function ContactForm() {
             Fill up the form and get a response from our team within 24 hours
           </p>
           <ul className="my-10 space-y-5 text-xl">
-            <li>{phone} &nbsp; +2347064287358</li>
-            <li>{mail} &nbsp; trippayer@gmail.com</li>
-            <li>{location} &nbsp; 3, Yunusa Adeniji Street Off John Olugbo Street Ikeja, 100001, Lagos</li>
+            <li className="flex">{phone} &nbsp; +2347064287358</li>
+            <li className="flex">{mail} &nbsp; trippayer@gmail.com</li>
+            <li className="flex ">{location} &nbsp; 3, Yunusa Adeniji Street Off John Olugbo Street Ikeja, 100001, Lagos</li>
           </ul>
           <div className="flex space-x-6">
             <a href="">{instagram}</a>
@@ -61,7 +61,7 @@ function ContactForm() {
           </button>
         </form>
       </div>
-    </div>
+    </div >
   );
 }
 
