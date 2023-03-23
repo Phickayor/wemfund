@@ -13,7 +13,7 @@ function Footer() {
       <div className="hidden md:flex justify-between text-[poppins] px-16 py-10">
         <div className="my-4 w-1/2">
           <h1 className="text-4xl font-bold my-4">Logo</h1>
-          <p className="my-4 w-11/12 font-normal text-2xl">Trippayer is a payment gateway which can be used to make payment for trips in nigeria</p>
+          <p className="my-4 w-11/12 font-normal text-2xl">TripPayer is a payment gateway which can be used to make payment for trips in nigeria</p>
 
           <div className="flex mt-10 space-x-4">
             <a href="">{instagram}</a>

@@ -12,7 +12,7 @@ function Features() {
         </div>
         <div className="space-y-2 mt-4">
           <h1 className="font-semibold text-darkblue md:text-3xl text-2xl">Pay For Ride</h1>
-          <p className="md:text-xl text-lg">With trippayers you can pay for your rides seamlessly</p>
+          <p className="md:text-xl text-lg">With TripPayer you can pay for your rides seamlessly</p>
         </div>
       </div>
       <div className=" text-center md:text-left md:border-none border-b-2 border-dashed border-bordercolor pb-6 ">
@@ -26,7 +26,7 @@ function Features() {
             Recieve Funds
           </h1>
           <p className="md:text-xl text-lg">
-            Trippayers gives you abilily to receive funds as a driver
+            TripPayer gives you abilily to receive funds as a driver
           </p>
         </div>
       </div>

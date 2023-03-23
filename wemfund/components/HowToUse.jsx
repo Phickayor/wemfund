@@ -8,7 +8,7 @@ function HowToUse() {
       </div>
       <div className="flex flex-col md:justify-end md:py-10 py-5 md:w-full ">
         <h1 className="text-center font-bold md:text-6xl text-black my-5">
-          How Trippayer works
+          How TripPayer works
         </h1>
         <div className="space-y-8 py-6 mx-auto text-darkblue overflow-y-scroll md:overflow-y-visible">
           <div className=" md:mx-auto mx-4 space-y-2 md:w-9/12">

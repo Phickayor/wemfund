@@ -27,7 +27,7 @@ function ContactForm() {
           </p>
           <ul className="my-10 space-y-5 text-xl">
             <li>{phone} &nbsp; +2347025044627</li>
-            <li>{mail} &nbsp; trippayer@gmail.com</li>
+            <li>{mail} &nbsp; TripPayer@gmail.com</li>
             <li>{location} &nbsp; 3, Yunusa Adeniji Street Off John Olugbo Street Ikeja, 100001, Lagos</li>
           </ul>
           <div className="flex space-x-6">
