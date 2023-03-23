@@ -11,8 +11,8 @@ function Features() {
           />
         </div>
         <div className="space-y-2 mt-4">
-          <h1 className="font-semibold text-darkblue text-3xl">Pay For Ride</h1>
-          <p className="text-xl">With trippayers you can pay for your rides seamlessly</p>
+          <h1 className="font-semibold text-darkblue md:text-3xl text-2xl">Pay For Ride</h1>
+          <p className="md:text-xl text-lg">With trippayers you can pay for your rides seamlessly</p>
         </div>
       </div>
       <div className=" text-center md:text-left md:border-none border-b-2 border-dashed border-bordercolor pb-6 ">
@@ -22,10 +22,10 @@ function Features() {
           />
         </div>
         <div className="space-y-2 mt-4">
-          <h1 className="font-semibold text-darkblue text-3xl">
+          <h1 className="font-semibold text-darkblue md:text-3xl text-2xl">
             Recieve Funds
           </h1>
-          <p className="text-xl">
+          <p className="md:text-xl text-lg">
             Trippayers gives you abilily to receive funds as a driver
           </p>
         </div>
@@ -35,8 +35,8 @@ function Features() {
           <img src="/nfc payment.png" className="rounded-full w-24 h-24 p-2 self-center mx-auto " />
         </div>
         <div className="space-y-2 mt-4">
-          <h1 className="font-semibold text-darkblue text-3xl">Top Up funds</h1>
-          <p className="text-xl">You can topup your wallet from your bank with ease</p>
+          <h1 className="font-semibold text-darkblue md:text-3xl text-2xl">Top Up funds</h1>
+          <p className="md:text-xl text-lg">You can topup your wallet from your bank with ease</p>
         </div>
       </div>
     </div>

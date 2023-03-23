@@ -4,7 +4,7 @@ function Hero() {
     <div className="text-darkblue text-center">
       <div className="flex flex-col justify-center py-4 md:px-10 px-5 my-10">
         <div className="md:w-1/2 px-5 w-5/6 self-center space-y-5">
-          <h1 className="md:text-6xl text-2xl font-semibold md:leading-[72px] font-[poppins]">
+          <h1 className="md:text-6xl text-3xl font-semibold md:leading-[72px] font-[poppins]">
             Pay Ride <br /> With Ease
           </h1>
           <p className="md:text-3xl text-lg font-medium font-[poppins] md:mx-10">
