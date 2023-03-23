@@ -10,7 +10,7 @@ function Footer() {
   );
   return (
     <div className="bg-darkblue border-white border-t-2 text-white">
-      <div className="flex justify-between text-[poppins] px-16 py-10">
+      <div className="hidden md:flex justify-between text-[poppins] px-16 py-10">
         <div className="my-4 w-1/2">
           <h1 className="text-4xl font-bold my-4">Logo</h1>
           <p className="my-4 w-11/12 font-normal text-2xl">Trippayer is a payment gateway which can be used to make payment for trips in nigeria</p>
@@ -38,6 +38,20 @@ function Footer() {
           </ul>
         </div>
       </div>
+      <div className=" md:hidden mx-auto py-4">
+        <ul className="flex text-2xl flex-col space-y-10 py-5 ">
+          <li className="self-center">Contact us</li>
+          <li className="self-center">Quick links</li>
+          <li className="self-center" >Support</li>
+        </ul>
+        <div className="flex justify-center mt-2 space-x-6">
+          <a href="">{instagram}</a>
+          <a href="">{facebook}</a>
+          <a href="">{instagram}</a>
+          <a href="">{facebook}</a>
+        </div>
+      </div>
+
     </div>
   );
 }
