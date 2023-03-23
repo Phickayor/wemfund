@@ -12,7 +12,7 @@ function Footer() {
     <div className="bg-darkblue border-white border-t-2 text-white">
       <div className="hidden md:flex justify-between text-[poppins] px-16 py-10">
         <div className="my-4 w-1/2">
-          <h1 className="text-4xl font-bold my-4">Logo</h1>
+          <img src="/lightlogo.png" className="text-4xl font-bold my-4 h-32" alt="Logo" />
           <p className="my-4 w-11/12 font-normal text-2xl">TripPayer is a payment gateway which can be used to make payment for trips in nigeria</p>
 
           <div className="flex mt-10 space-x-4">
