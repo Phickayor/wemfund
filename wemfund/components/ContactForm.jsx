@@ -5,9 +5,13 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
-
+import React, { useEffect } from "react";
+import AOS from 'aos'
+import "aos/dist/aos.css";
 function ContactForm() {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   const phone = <FontAwesomeIcon icon={faPhone} />;
   const mail = <FontAwesomeIcon icon={faEnvelope} />;
   const location = <FontAwesomeIcon icon={faMapMarker} />;
@@ -21,7 +25,10 @@ function ContactForm() {
   );
   return (
     <div className="my-10 mx-auto md:w-10/12 w-11/12 flex md:flex-row flex-col justify-around font-[poppins]">
-      <div className="px-10 md:w-1/2">
+      <div className="px-10 md:w-1/2"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
         <div className="mx-auto md:w-10/12 my-10 h-full">
           <h1 className="font-bold text-darkblue md:text-4xl text-2xl my-4">Contact Us</h1>
           <p className="text-textcolor text-xl">
@@ -40,7 +47,11 @@ function ContactForm() {
         </div>
       </div>
 
-      <div className="md:w-1/2 text-white md:text-2xl text-xl">
+      <div
+        className="md:w-1/2 text-white md:text-2xl text-xl"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+      >
         <form className="bg-darkblue px-10 md:py-20 py-10 rounded-2xl mx-auto md:w-10/12 h-fit">
           <label className="">Name</label>
           <input
