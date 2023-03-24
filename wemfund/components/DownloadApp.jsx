@@ -1,8 +1,16 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 function DownloadApp() {
+  useEffect(() => {
+    AOS.init()
+  })
   return (
-    <div className="mx-auto md:w-10/12 w-11/12 text-center my-10">
+    <div
+      className="mx-auto md:w-10/12 w-11/12 text-center my-10"
+      data-aos="fade-down"
+      data-aos-duration="1000"
+    >
       <h1 className="md:text-6xl text-4xl font-semibold md:leading-[52px] font-[poppins] text-darkblue">
         Download the TripPayer App
       </h1>

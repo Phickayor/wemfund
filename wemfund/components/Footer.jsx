@@ -23,7 +23,11 @@ function Footer() {
   );
   return (
     <div className="bg-darkblue border-white border-t-2 text-white">
-      <div className="hidden md:flex justify-between text-[poppins] px-16 py-10">
+      <div
+        className="hidden md:flex justify-between text-[poppins] px-16 py-10"
+        data-aos="fade-up"
+        data-aos-duration="700"
+      >
         <div className="my-4 w-1/2">
           <img src="/lightlogo.png" className="text-4xl font-bold my-4 h-32" alt="Logo" />
           <p className="my-4 w-11/12 font-normal text-2xl">TripPayer is a payment gateway which can be used to make payment for trips in nigeria</p>
@@ -51,7 +55,7 @@ function Footer() {
         </div>
       </div>
       <div className=" md:hidden mx-auto py-4" data-aos="fade-up"
-        data-aos-duration="300">
+        data-aos-duration="700">
         <ul className="flex text-2xl flex-col space-y-10 py-5 ">
           <li className="self-center">Contact us</li>
           <li className="self-center">Quick links</li>
