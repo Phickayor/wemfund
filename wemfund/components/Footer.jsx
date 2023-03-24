@@ -1,12 +1,19 @@
 import React from "react";
-import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faTwitter, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 function Footer() {
   const instagram = (
     <FontAwesomeIcon icon={faInstagram} className="font-semibold text-4xl" />
   );
-  const facebook = (
-    <FontAwesomeIcon icon={faFacebook} className="font-semibold text-4xl" />
+  const twitter = (
+    <FontAwesomeIcon icon={faTwitter} className="font-semibold text-4xl" />
+  );
+  const linkedin = (
+    <FontAwesomeIcon icon={faLinkedinIn} className="font-semibold text-4xl" />
+  );
+  const mail = (
+    <FontAwesomeIcon icon={faEnvelope} className="font-semibold text-4xl" />
   );
   return (
     <div className="bg-darkblue border-white border-t-2 text-white">
@@ -17,9 +24,8 @@ function Footer() {
 
           <div className="flex mt-10 space-x-4">
             <a href="https://www.instagram.com/trippayer/">{instagram}</a>
-            <a href="">{facebook}</a>
-            <a href="https://www.instagram.com/trippayer/">{instagram}</a>
-            <a href="">{facebook}</a>
+            <a href="">{twitter}</a>
+            <a href="">{linkedin}</a>
           </div>
         </div>
         <div className="my-4 px-10">
@@ -45,10 +51,10 @@ function Footer() {
           <li className="self-center" >Support</li>
         </ul>
         <div className="flex justify-center mt-2 space-x-6">
-          <a href="">{instagram}</a>
-          <a href="">{facebook}</a>
-          <a href="">{instagram}</a>
-          <a href="">{facebook}</a>
+          <a href="https://www.instagram.com/trippayer/">{instagram}</a>
+          <a href="">{twitter}</a>
+          <a href="">{linkedin}</a>
+          <a href="mailto:trippayer@gmail.com">{mail}</a>
         </div>
       </div>
 

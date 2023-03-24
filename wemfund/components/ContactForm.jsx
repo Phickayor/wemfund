@@ -1,6 +1,6 @@
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import {
-  faMailBulk,
+  faEnvelope,
   faMapMarker,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
@@ -9,13 +9,15 @@ import React from "react";
 
 function ContactForm() {
   const phone = <FontAwesomeIcon icon={faPhone} />;
-  const mail = <FontAwesomeIcon icon={faMailBulk} />;
+  const mail = <FontAwesomeIcon icon={faEnvelope} />;
   const location = <FontAwesomeIcon icon={faMapMarker} />;
   const instagram = (
     <FontAwesomeIcon icon={faInstagram} className="font-semibold text-4xl" />
+  ); const linkedin = (
+    <FontAwesomeIcon icon={faLinkedinIn} className="font-semibold text-4xl" />
   );
-  const facebook = (
-    <FontAwesomeIcon icon={faFacebook} className="font-semibold text-4xl" />
+  const twitter = (
+    <FontAwesomeIcon icon={faTwitter} className="font-semibold text-4xl" />
   );
   return (
     <div className="my-10 mx-auto md:w-10/12 w-11/12 flex md:flex-row flex-col justify-around font-[poppins]">
@@ -31,9 +33,9 @@ function ContactForm() {
             <li className="flex ">{location} &nbsp; 3, Yunusa Adeniji Street Off John Olugbo Street Ikeja, 100001, Lagos</li>
           </ul>
           <div className="flex space-x-6">
-            <a href="">{instagram}</a>
-            <a href="">{facebook}</a>
-            <a href="">{instagram}</a>
+            <a href="https://www.instagram.com/trippayer/">{instagram}</a>
+            <a href="">{twitter}</a>
+            <a href="">{linkedin}</a>
           </div>
         </div>
       </div>
