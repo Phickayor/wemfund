@@ -1,5 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Hero() {
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   return (
     <div className="text-darkblue text-center">
       <div className="flex flex-col justify-center py-4 md:px-10 px-5 my-10">
@@ -19,12 +25,20 @@ function Hero() {
           />
         </div>
 
-        <p className="mt-10 font-semibold text-3xl md:text-6xl md:leading-[70px] ">
+        <p
+          className="mt-10 font-semibold text-3xl md:text-6xl md:leading-[70px] "
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
           Easy <b className="text-purple font-semibold">Payment for trips </b><br />
           Sign up for <b className="text-purple font-semibold">free </b>now!
         </p>
 
-        <div className="flex justify-center my-5 ">
+        <div
+          className="flex justify-center my-5 "
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
           <img src="/PlayStore.png" className="md:mx-4 m-2 rounded-3xl" />
           <img src="/AppStore.png" className="md:mx-4 m-2 rounded-3xl" />
         </div>

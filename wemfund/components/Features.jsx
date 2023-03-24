@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Features() {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
-    <div className="font-[poppins] my-10 mx-auto w-10/12 font-[poppins] flex flex-col md:flex-row text-textcolor space-y-10 md:space-y-0 space-x-0 md:space-x-10">
-      <div className=" text-center md:text-left md:border-none border-b-2  border-dashed border-bordercolor pb-6 ">
+    <div className="font-[poppins] my-10 md:my-20 mx-auto w-10/12 font-[poppins] flex flex-col md:flex-row text-textcolor space-y-10 md:space-y-0 space-x-0 md:space-x-10">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="500"
+        className=" text-center md:text-left md:border-none border-b-2  border-dashed border-bordercolor pb-6 ">
         <div className="bg-darkblue md:mx-0 mx-auto w-24 h-24 rounded-full flex">
           <img
             src="/Online payment.png"
@@ -15,7 +23,10 @@ function Features() {
           <p className="md:text-xl text-lg">With TripPayer you can pay for your rides seamlessly</p>
         </div>
       </div>
-      <div className=" text-center md:text-left md:border-none border-b-2 border-dashed border-bordercolor pb-6 ">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="500"
+        className=" text-center md:text-left md:border-none border-b-2 border-dashed border-bordercolor pb-6 ">
         <div className="bg-darkblue md:mx-0 mx-auto w-24 h-24 rounded-full flex">
           <img src="/multipayment.png"
             className="object-fit mx-auto self-center "
@@ -30,7 +41,10 @@ function Features() {
           </p>
         </div>
       </div>
-      <div className=" text-center md:text-left md:border-none border-b-2 border-dashed border-bordercolor pb-6 ">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="300"
+        className=" text-center md:text-left md:border-none border-b-2 border-dashed border-bordercolor pb-6 ">
         <div className="bg-darkblue md:mx-0  mx-auto w-24 h-24 rounded-full flex">
           <img src="/nfc payment.png" className="rounded-full w-24 h-24 p-2 self-center mx-auto " />
         </div>

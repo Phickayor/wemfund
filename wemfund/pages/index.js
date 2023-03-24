@@ -11,8 +11,13 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 // Prevent fontawesome from adding its CSS since we did it manually above:
 import { config } from '@fortawesome/fontawesome-svg-core';
 config.autoAddCss = false; /* eslint-disable import/first */
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react'
 export default function Home() {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <>
       <Head>
@@ -23,10 +28,22 @@ export default function Home() {
       </Head>
       <NavBar />
       <Hero />
-      <HowToUse />
-      <Features />
-      <Reviews />
-      <Footer />
+      <div data-aos="zoom-in-right"
+        data-aos-duration="1000">
+        <HowToUse />
+      </div>
+      <div data-aos="fade-right"
+        data-aos-duration="1000" >
+        <Features />
+      </div>
+      <div data-aos="fade-down"
+        data-aos-duration="1000" >
+        <Reviews />
+      </div>
+      <div data-aos="fade-up"
+        data-aos-duration="1500" >
+        <Footer />
+      </div>
     </>
   )
 }

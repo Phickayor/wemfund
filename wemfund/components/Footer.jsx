@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { faInstagram, faTwitter, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function Footer() {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   const instagram = (
     <FontAwesomeIcon icon={faInstagram} className="font-semibold text-4xl" />
   );
@@ -44,7 +50,8 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className=" md:hidden mx-auto py-4">
+      <div className=" md:hidden mx-auto py-4" data-aos="fade-up"
+        data-aos-duration="300">
         <ul className="flex text-2xl flex-col space-y-10 py-5 ">
           <li className="self-center">Contact us</li>
           <li className="self-center">Quick links</li>
