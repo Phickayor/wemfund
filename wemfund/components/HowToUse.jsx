@@ -16,7 +16,7 @@ function HowToUse() {
               <h1 className="font-bold">01</h1>
               <h1 className="font-semibold">Create an Account</h1>
             </div>
-            <p className="lg:w-9/12 lg:mx-3 lg:px-12 pl-6 text-left border-l-4 lg:text-xl text-xs">
+            <p className="lg:w-9/12 lg:mx-3 lg:px-12 pl-8 text-left border-l-4 lg:text-xl text-xs">
               Sign up for an account with your name, email and phone
               number.
             </p>
@@ -26,7 +26,7 @@ function HowToUse() {
               <h1 className="font-bold">02</h1>
               <h1 className="font-semibold">Set Up Your Profile</h1>
             </div>
-            <p className=" lg:w-9/12 lg:mx-3 lg:px-12 pl-6 text-left border-l-4 lg:text-xl text-xs">
+            <p className=" lg:w-9/12 lg:mx-3 lg:px-12 pl-8 text-left border-l-4 lg:text-xl text-xs">
               Add payment methods to your account such as credit cards, debit cards and digital wallets.
             </p>
           </div>
@@ -35,7 +35,7 @@ function HowToUse() {
               <h1 className="font-bold">03</h1>
               <h1 className="font-semibold">Pay Ride</h1>
             </div>
-            <p className=" lg:w-9/12 lg:mx-3 lg:px-12 pl-6 text-left border-l-4 lg:text-xl text-xs">
+            <p className=" lg:w-9/12 lg:mx-3 lg:px-12 pl-8 text-left border-l-4 lg:text-xl text-xs">
               Scan and make payment within a minute. Make easy and fast payment with TripPayer
             </p>
           </div>
@@ -44,7 +44,7 @@ function HowToUse() {
               <h1 className="font-bold">04</h1>
               <h1 className="font-semibold">View Transaction History</h1>
             </div>
-            <p className="lg:w-9/12 lg:mx-3 lg:px-12 pl-6 text-left border-l-4 lg:text-xl text-xs">
+            <p className="lg:w-9/12 lg:mx-3 lg:px-12 pl-8 text-left border-l-4 lg:text-xl text-xs">
               Calculate your daily cost of transportion by viewing your transaction history after payment.
             </p>
           </div>
