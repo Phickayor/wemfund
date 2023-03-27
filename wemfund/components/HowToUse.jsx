@@ -27,8 +27,7 @@ function HowToUse() {
               <h1 className="font-semibold">Set Up Your Profile</h1>
             </div>
             <p className=" lg:w-9/12 lg:mx-3 lg:px-12 pl-6 text-left border-l-4 lg:text-xl text-xs">
-              Sign up for an account with your name, email and phone
-              number.
+              Add payment methods to your account such as credit cards, debit cards and digital wallets.
             </p>
           </div>
           <div className=" lg:mx-auto mx-4 space-y-2 lg:w-9/12">
@@ -37,8 +36,7 @@ function HowToUse() {
               <h1 className="font-semibold">Pay Ride</h1>
             </div>
             <p className=" lg:w-9/12 lg:mx-3 lg:px-12 pl-6 text-left border-l-4 lg:text-xl text-xs">
-              Sign up for an account with your name, email and phone
-              number.
+              Scan and make payment within a minute. Make easy and fast payment with TripPayer
             </p>
           </div>
           <div className=" lg:mx-auto mx-4 space-y-2 lg:w-9/12">
@@ -47,8 +45,7 @@ function HowToUse() {
               <h1 className="font-semibold">View Transaction History</h1>
             </div>
             <p className="lg:w-9/12 lg:mx-3 lg:px-12 pl-6 text-left border-l-4 lg:text-xl text-xs">
-              Sign up for an account with your name, email and phone
-              number.
+              Calculate your daily cost of transportion by viewing your transaction history after paymnt.
             </p>
           </div>
         </div>

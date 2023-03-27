@@ -17,9 +17,8 @@ function About() {
         data-aos-duration="1000"
         className="md:text-5xl text-2xl text-textcolor font-light"
       >
-        Sass koscheria. Rear mms:a. Prev geogt. Megass ultrafogen. Dess. Aktiga
-        sev. Karl Lindholm gubön. Bihyd besade. Diavasam. Ressade. Ratt sov. Din
-        lunyjeskap. /
+        TripPayer is a transportation payment mobile application that allow users to pay
+        for transportation services from the convenience of their mobile app.
       </p>
     </div>
   );
