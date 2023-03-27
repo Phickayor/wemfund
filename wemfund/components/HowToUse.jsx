@@ -2,15 +2,15 @@ import React from "react";
 
 function HowToUse() {
   return (
-    <div className="flex font-[poppins] text-darkblue lg:h-fit h-96 my-10 mx-auto lg:w-10/12 w-11/12">
-      <div className="flex bg-purple ">
+    <div className="flex font-[poppins] text-darkblue lg:h-fit  my-10 mx-auto lg:w-10/12 w-11/12">
+      <div className="hidden lg:flex bg-purple ">
         <img src="/howToUseImage.png" className="self-center" />
       </div>
-      <div className="flex flex-col lg:justify-end lg:py-10 py-5 lg:w-full ">
-        <h1 className="text-center font-bold lg:text-6xl text-black my-5">
+      <div className="flex flex-col lg:justify-end lg:py-10  lg:w-full ">
+        <h1 className="text-center font-bold lg:text-6xl text-3xl text-black my-5 w-full">
           How TripPayer works
         </h1>
-        <div className="space-y-8 py-6 mx-auto text-darkblue overflow-y-scroll lg:overflow-y-visible">
+        <div className="lg:space-y-8 space-y-6 lg:py-6 mx-auto text-darkblue overflow-y-auto lg:overflow-y-visible">
           <div className=" lg:mx-auto mx-4 space-y-2 lg:w-9/12">
             <div className="flex lg:space-x-10 space-x-5 text-md lg:text-3xl font-semibold ">
               <h1 className="font-bold">01</h1>
@@ -45,7 +45,7 @@ function HowToUse() {
               <h1 className="font-semibold">View Transaction History</h1>
             </div>
             <p className="lg:w-9/12 lg:mx-3 lg:px-12 pl-6 text-left border-l-4 lg:text-xl text-xs">
-              Calculate your daily cost of transportion by viewing your transaction history after paymnt.
+              Calculate your daily cost of transportion by viewing your transaction history after payment.
             </p>
           </div>
         </div>
