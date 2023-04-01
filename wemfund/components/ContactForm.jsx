@@ -5,10 +5,13 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import AOS from 'aos'
 import "aos/dist/aos.css";
 function ContactForm() {
+  const nameContainer = useRef()
+  const mailContainer = useRef()
+  const messageContainer = useRef()
   useEffect(() => {
     AOS.init()
   }, [])
@@ -23,6 +26,22 @@ function ContactForm() {
   const twitter = (
     <FontAwesomeIcon icon={faTwitter} className="font-semibold text-4xl" />
   );
+  function HandleSubmit() {
+    var name = nameContainer.current.value
+    fetch("http://localhost:3001", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ name, arrivalDate, depatureDate })
+    }
+    ).then(function (response) {
+
+    }
+    ).then(function (data) {
+
+    })
+  }
   return (
     <div className="my-10 mx-auto md:w-10/12 w-11/12 flex md:flex-row flex-col justify-around font-[poppins]">
       <div className="px-10 md:w-1/2"
@@ -57,16 +76,19 @@ function ContactForm() {
           <input
             className="text-textcolor rounded-md block p-2 my-3 w-full"
             type="text"
+            ref={nameContainer}
           />
           <label className="">Email</label>
           <input
             className="text-textcolor rounded-md block p-2 my-3 w-full "
             type="text"
+            ref={mailContainer}
           />
           <label className="p-2">Message</label>
           <textarea
             className="text-textcolor rounded-md block p-2 my-3 w-full"
             type="text"
+            ref={messageContainer}
           />
 
           <button className="border border-color mx-5 text-white w-fit px-10 py-3 mt-5 font-[poppins] rounded-2xl">
