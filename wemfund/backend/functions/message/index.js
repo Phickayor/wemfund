@@ -1,7 +1,10 @@
-var express = require("express")
-var app = express()
-const PORT = process.env.PORT || 3001;
 
+// your server-side functionality
+const express = require("express")
+const app = express()
+const serverless = require("serverless-http")
+const router = express.Router()
+const PORT = process.env.PORT || 3001;
 require("dotenv").config();
 const bodyParser = require("body-parser");
 var nodemailer = require("nodemailer");
@@ -9,7 +12,7 @@ const cors = require("cors");
 const { google } = require("googleapis");
 const OAuth2 = google.auth.OAuth2;
 // using cors
-app.use(
+router.use(
     cors({
         origin: ["http://localhost:3000", "https://trippayer.netlify.app"], // restrict calls to those this address
         methods: "POST" // only allow POST requests
@@ -27,10 +30,10 @@ oauth2Client.setCredentials({
 const accessToken = oauth2Client.getAccessToken()
 //using body-parser
 // Body-parser middleware
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+router.use(bodyParser.urlencoded({ extended: false }));
+router.use(bodyParser.json());
 
-app.post("/message", (req, res) => {
+router.post("/message", (req, res) => {
     res.setHeader("Content-Type", "application/json");
     var details = {
         name: req.body.name,
@@ -69,6 +72,8 @@ app.post("/message", (req, res) => {
     });
 })
 
-app.listen(PORT, () => {
+router.listen(PORT, () => {
     console.log(`Server listening on ${PORT}`);
 });
+
+module.exports.handler = serverless(app)
