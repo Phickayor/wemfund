@@ -5,7 +5,7 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import AOS from 'aos'
 import "aos/dist/aos.css";
 function ContactForm() {
@@ -26,8 +26,9 @@ function ContactForm() {
   const twitter = (
     <FontAwesomeIcon icon={faTwitter} className="font-semibold text-4xl" />
   );
-  function HandleSubmit() {
-    alert("got here")
+  const [Status, setStatus] = useState()
+  function HandleSubmit(e) {
+    e.preventDefault()
     var name = nameContainer.current.value
     var email = mailContainer.current.value
     var message = messageContainer.current.value
@@ -39,12 +40,24 @@ function ContactForm() {
       body: JSON.stringify({ name, email, message })
     }
     )
-    //.then(function (response) {
-
-    // }
-    // ).then(function (data) {
-
-    // })
+      .then(function (response) {
+        return response.json()
+      }
+      ).then(function (data) {
+        if (data.info === "success") {
+          setStatus(`Hey ${name}, your message has been delivered successfully`)
+          nameContainer.current.value = " "
+          mailContainer.current.value = " "
+          messageContainer.current.value = " "
+        } else {
+          setStatus(`An error occured, check your internet connection`)
+        }
+        alert(Status)
+      })
+      .catch((error) => {
+        console.log(error)
+        console.log('An error occured, check your internet connection and try again')
+      });
   }
   return (
     <div className="my-10 mx-auto md:w-10/12 w-11/12 flex md:flex-row flex-col justify-around font-[poppins]">
@@ -79,18 +92,21 @@ function ContactForm() {
           <label className="">Name</label>
           <input
             className="text-textcolor rounded-md block p-2 my-3 w-full"
+            required
             type="text"
             ref={nameContainer}
           />
           <label className="">Email</label>
           <input
             className="text-textcolor rounded-md block p-2 my-3 w-full "
-            type="text"
+            required
+            type="email"
             ref={mailContainer}
           />
           <label className="p-2">Message</label>
           <textarea
             className="text-textcolor rounded-md block p-2 my-3 w-full"
+            required
             type="text"
             ref={messageContainer}
           />
