@@ -36,7 +36,7 @@ function ContactForm() {
     var name = nameContainer.current.value
     var email = mailContainer.current.value
     var message = messageContainer.current.value
-    fetch("http://localhost:3001/message", {
+    fetch("http://localhost:3001/messag", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -62,6 +62,7 @@ function ContactForm() {
       .catch((error) => {
         console.log(error)
         alert('An error occured, check your internet connection and try again')
+        setLoad("")
       });
 
   }
