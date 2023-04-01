@@ -27,15 +27,16 @@ function ContactForm() {
     <FontAwesomeIcon icon={faTwitter} className="font-semibold text-4xl" />
   );
   function HandleSubmit() {
+    alert("got here")
     var name = nameContainer.current.value
-    var mail = mailContainer.current.value
+    var email = mailContainer.current.value
     var message = messageContainer.current.value
     fetch("http://localhost:3001/message", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({ name, mail, message })
+      body: JSON.stringify({ name, email, message })
     }
     )
     //.then(function (response) {

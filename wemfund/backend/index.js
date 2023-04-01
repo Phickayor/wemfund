@@ -3,7 +3,7 @@ var app = express()
 const PORT = process.env.PORT || 3001;
 
 require("dotenv").config();
-const bodyparser = require("body-parser");
+const bodyParser = require("body-parser");
 var nodemailer = require("nodemailer");
 const cors = require("cors");
 const { google } = require("googleapis");
@@ -11,7 +11,7 @@ const OAuth2 = google.auth.OAuth2;
 // using cors
 app.use(
     cors({
-        origin: "http://localhost:3000", // restrict calls to those this address
+        origin: ["http://localhost:3000", "https://trippayer.netlify.app"], // restrict calls to those this address
         methods: "POST" // only allow POST requests
     })
 );
@@ -27,10 +27,11 @@ oauth2Client.setCredentials({
 const accessToken = oauth2Client.getAccessToken()
 //using body-parser
 // Body-parser middleware
-app.use(bodyparser.urlencoded({ extended: false }));
-app.use(bodyparser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 app.post("/message", (req, res) => {
+    res.setHeader("Content-Type", "application/json");
     var details = {
         name: req.body.name,
         email: req.body.email,
@@ -59,11 +60,11 @@ app.post("/message", (req, res) => {
 
     transporter.sendMail(mailOptions, function (err, info) {
         if (err) {
-            res.send(`An Error occured try again`)
+            res.send(`Mail not sent`)
             console.log(err);
         } else {
             console.log("Email sent: " + info.response);
-            res.send(`Email sent`)
+            res.send(`Mail sent`)
         }
     });
 })
