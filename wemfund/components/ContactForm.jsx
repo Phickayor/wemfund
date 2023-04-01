@@ -28,19 +28,22 @@ function ContactForm() {
   );
   function HandleSubmit() {
     var name = nameContainer.current.value
-    fetch("http://localhost:3001", {
+    var mail = mailContainer.current.value
+    var message = messageContainer.current.value
+    fetch("http://localhost:3001/message", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({ name, arrivalDate, depatureDate })
+      body: JSON.stringify({ name, mail, message })
     }
-    ).then(function (response) {
+    )
+    //.then(function (response) {
 
-    }
-    ).then(function (data) {
+    // }
+    // ).then(function (data) {
 
-    })
+    // })
   }
   return (
     <div className="my-10 mx-auto md:w-10/12 w-11/12 flex md:flex-row flex-col justify-around font-[poppins]">
@@ -71,7 +74,7 @@ function ContactForm() {
         data-aos="fade-left"
         data-aos-duration="1000"
       >
-        <form className="bg-darkblue px-10 md:py-20 py-10 rounded-2xl mx-auto md:w-10/12 h-fit">
+        <form className="bg-darkblue px-10 md:py-20 py-10 rounded-2xl mx-auto md:w-10/12 h-fit" onSubmit={HandleSubmit}>
           <label className="">Name</label>
           <input
             className="text-textcolor rounded-md block p-2 my-3 w-full"
