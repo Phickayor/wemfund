@@ -3,6 +3,7 @@ import {
   faEnvelope,
   faMapMarker,
   faPhone,
+  faSpinner,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useRef, useState } from "react";
@@ -18,6 +19,7 @@ function ContactForm() {
   const phone = <FontAwesomeIcon icon={faPhone} />;
   const mail = <FontAwesomeIcon icon={faEnvelope} />;
   const location = <FontAwesomeIcon icon={faMapMarker} />;
+  const spin = <FontAwesomeIcon icon={faSpinner} className="fa-spin" />
   const instagram = (
     <FontAwesomeIcon icon={faInstagram} className="font-semibold text-4xl" />
   ); const linkedin = (
@@ -27,8 +29,10 @@ function ContactForm() {
     <FontAwesomeIcon icon={faTwitter} className="font-semibold text-4xl" />
   );
   const [Status, setStatus] = useState()
+  const [load, setLoad] = useState()
   function HandleSubmit(e) {
     e.preventDefault()
+    setLoad(spin)
     var name = nameContainer.current.value
     var email = mailContainer.current.value
     var message = messageContainer.current.value
@@ -52,12 +56,14 @@ function ContactForm() {
         } else {
           setStatus(`An error occured, check your internet connection`)
         }
+        setLoad("")
         alert(Status)
       })
       .catch((error) => {
         console.log(error)
-        console.log('An error occured, check your internet connection and try again')
+        alert('An error occured, check your internet connection and try again')
       });
+
   }
   return (
     <div className="my-10 mx-auto md:w-10/12 w-11/12 flex md:flex-row flex-col justify-around font-[poppins]">
@@ -112,7 +118,7 @@ function ContactForm() {
           />
 
           <button className="border border-color mx-5 text-white w-fit px-10 py-3 mt-5 font-[poppins] rounded-2xl">
-            Send
+            {load} &nbsp;Send
           </button>
         </form>
       </div>
