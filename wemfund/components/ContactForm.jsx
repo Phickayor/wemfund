@@ -36,7 +36,7 @@ function ContactForm() {
     var name = nameContainer.current.value
     var email = mailContainer.current.value
     var message = messageContainer.current.value
-    fetch("/.wemfund/backend/functions/message", {
+    fetch("http://localhost:3001/messag", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

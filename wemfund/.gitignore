@@ -30,4 +30,4 @@ yarn-error.log*
 
 # vercel
 .vercel
-backend/functions/message/.env
+backend/.env
