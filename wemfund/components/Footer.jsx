@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { faInstagram, faTwitter, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -10,16 +9,13 @@ function Footer() {
     AOS.init()
   }, [])
   const instagram = (
-    <FontAwesomeIcon icon={faInstagram} className="font-semibold text-4xl" />
+    <FontAwesomeIcon icon={faInstagram} className="font-semibold text-4xl hover:text-purple" />
   );
   const twitter = (
-    <FontAwesomeIcon icon={faTwitter} className="font-semibold text-4xl" />
+    <FontAwesomeIcon icon={faTwitter} className="font-semibold text-4xl hover:text-purple" />
   );
   const linkedin = (
-    <FontAwesomeIcon icon={faLinkedinIn} className="font-semibold text-4xl" />
-  );
-  const mail = (
-    <FontAwesomeIcon icon={faEnvelope} className="font-semibold text-4xl" />
+    <FontAwesomeIcon icon={faLinkedinIn} className="font-semibold text-4xl hover:text-purple" />
   );
   return (
     <div className="bg-darkblue h-full border-white border-t-2 px-10 py-5 flex flex-col-reverse md:flex-row text-white">
@@ -31,7 +27,7 @@ function Footer() {
         </div>
         <p className="my-4 md:w-11/12 font-normal text-2xl">Trippayer is a payment gateway which can be used to make payment for trips in nigeria</p>
 
-        <div className="flex mt-10 space-x-4">
+        <div className="flex mt-10 space-x-4 ">
           <a href="https://www.instagram.com/trippayer/">{instagram}</a>
           <a href="">{twitter}</a>
           <a href="">{linkedin}</a>
