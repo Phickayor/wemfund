@@ -2,8 +2,7 @@ import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React, { useState } from "react";
-
-function NavBar() {
+function NavBar(props) {
   const [sideBarWidth, setSideBarWidth] = useState("0%");
   const close = (
     <FontAwesomeIcon
@@ -14,7 +13,15 @@ function NavBar() {
   const harmburger = (
     <FontAwesomeIcon icon={faBars} className="p-4 text-4xl " />
   );
-
+  var navigations = [
+    {
+      "name": props.firstNav,
+      "href": props.firstNavLink
+    }, {
+      "name": props.secondNav,
+      "href": props.secondNavLink
+    }
+  ]
   function toggleSideBar() {
     if (sideBarWidth === "0%") {
       setSideBarWidth("100%");
@@ -30,15 +37,11 @@ function NavBar() {
         <h1 className="self-center p-2 text-3xl font-semibold font-[poppins]">Trippayer</h1>
       </div>
       <ul className="md:flex hidden space-x-10 font-semibold text-xl px-10 self-center">
-        {/* <Link href="/">
-          <li className="hover:list-disc">Home</li>
-        </Link> */}
-        <Link href="/about">
-          <li className="hover:list-disc">About</li>
-        </Link>
-        <Link href="/contact">
-          <li className="hover:list-disc">Contact us</li>
-        </Link>
+        {navigations.map((nav, index) => (
+          <Link href={nav.href} key={index}>
+            <li className="hover:list-disc">{nav.name}</li>
+          </Link>
+        ))}
       </ul>
       <div
         className="md:hidden self-center cursor-pointer"
@@ -47,7 +50,7 @@ function NavBar() {
         {harmburger}
       </div>
       <div
-        className="absolute duration-[1.5s] right-0 top-0 l h-screen fixed overflow-y-scroll bg-darkblue text-white flex-col flex"
+        className=" duration-[1.5s] right-0 top-0 l h-screen fixed overflow-y-scroll bg-darkblue text-white flex-col flex"
         style={{ width: sideBarWidth }}
       >
         <button

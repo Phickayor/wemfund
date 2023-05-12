@@ -27,7 +27,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
 
       </Head>
-      <NavBar />
+      <NavBar firstNav={"About"} firstNavLink={"/about"} secondNav={"Contact Us"} secondNavLink={"/contact"} />
       <Hero />
       <div data-aos="zoom-in-right"
         data-aos-duration="1000">

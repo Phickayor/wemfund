@@ -20,7 +20,7 @@ function about() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <NavBar />
+      <NavBar firstNav={"Home"} firstNavLink={"/"} secondNav={"Contact Us"} secondNavLink={"/contact"} />
       <About />
       <Vision />
       <DownloadApp />
