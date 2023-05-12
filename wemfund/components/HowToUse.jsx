@@ -8,7 +8,7 @@ function HowToUse() {
       </div>
       <div className="flex flex-col lg:justify-end lg:py-10  lg:w-full ">
         <h1 className="text-center font-bold lg:text-6xl text-3xl text-black my-5 w-full">
-          How TripPayer works
+          How Trippayer works
         </h1>
         <div className="lg:space-y-8 space-y-6 lg:py-6 mx-auto text-darkblue overflow-y-auto lg:overflow-y-visible">
           <div className=" lg:mx-auto mx-4 space-y-2 lg:w-9/12">
@@ -36,7 +36,7 @@ function HowToUse() {
               <h1 className="font-semibold">Pay Ride</h1>
             </div>
             <p className=" lg:w-9/12 lg:mx-3 lg:px-12 pl-8 text-left border-l-4 lg:text-xl text-xs">
-              Scan and make payment within a minute. Make easy and fast payment with TripPayer
+              Scan and make payment within a minute. Make easy and fast payment with Trippayer
             </p>
           </div>
           <div className=" lg:mx-auto mx-4 space-y-2 lg:w-9/12">

@@ -9,7 +9,7 @@ function Reviews() {
       <div className="md:w-1/2 mx-auto self-center space-y-4 text-center md:py-0 py-5">
         <h1 className="md:text-3xl text-2xl mx-auto md:w-10/12">The Highest Rating Payment App</h1>
         <h1 className="font-semibold md:text-3xl  text-2xl text-darkblue">
-          TripPayer App
+          Trippayer App
         </h1>
         <h1 className="md:text-4xl text-3xl font-bold text-darkblue">99%</h1>
         <h1 className="md:text-4xl text-3xl font-bold text-darkblue">

@@ -9,7 +9,7 @@ function About() {
   return (
     <div className="my-5  font-[poppins] md:space-y-12 space-y-6 text-center w-9/12 mx-auto">
       <h1 className="text-darkblue font-semibold md:text-7xl text-4xl">
-        About TripPayer
+        About Trippayer
       </h1>
       <p
 
@@ -17,7 +17,7 @@ function About() {
         data-aos-duration="1000"
         className="md:text-5xl text-2xl text-textcolor font-light"
       >
-        TripPayer is a transportation payment mobile application that allow users to pay
+        Trippayer is a transportation payment mobile application that allow users to pay
         for transportation services from the convenience of their mobile app.
       </p>
     </div>

@@ -14,7 +14,7 @@ function Hero() {
             Pay Ride <br /> With Ease
           </h1>
           <p className="md:text-3xl text-lg font-medium font-[poppins] md:mx-10">
-            With TripPayer you can easily pay for your ride on your mobile phone
+            With Trippayer you can easily pay for your ride on your mobile phone
             anywhere anytime.
           </p>
         </div>

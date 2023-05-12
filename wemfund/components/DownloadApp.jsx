@@ -12,9 +12,9 @@ function DownloadApp() {
       data-aos-duration="1000"
     >
       <h1 className="md:text-6xl text-4xl font-semibold md:leading-[52px] font-[poppins] text-darkblue">
-        Download the TripPayer App
+        Download the <b className="font-semibold text-purple">Trippayer</b> App
       </h1>
-      <p className="md:text-4xl text-2xl my-5 mx-auto md:w-3/5">Join over 200+ people already growing with TripPayer</p>
+      <p className="md:text-4xl text-2xl my-5 mx-auto md:w-3/5">Join over 200+ people already growing with Trippayer</p>
       <button className="bg-darkblue text-white font-medium text-2xl px-10 py-3 mt-5 font-[poppins] rounded-xl">
         Download app
       </button>
