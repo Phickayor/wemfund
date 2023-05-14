@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faInstagramSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -9,10 +9,10 @@ function Footer() {
     AOS.init()
   }, [])
   const instagram = (
-    <FontAwesomeIcon icon={faInstagram} className="font-semibold text-3xl lg:text-4xl hover:text-purple" />
+    <FontAwesomeIcon icon={faInstagramSquare} className="font-semibold text-3xl lg:text-4xl hover:text-purple" />
   );
   const linkedin = (
-    <FontAwesomeIcon icon={faLinkedinIn} className="font-semibold text-3xl lg:text-4xl hover:text-purple" />
+    <FontAwesomeIcon icon={faLinkedin} className="font-semibold text-3xl lg:text-4xl hover:text-purple" />
   );
   return (
     <div className="bg-darkblue h-full border-white border-t-2 lg:px-10 p-5 lg:py-5 flex flex-col-reverse lg:flex-row text-white">
@@ -22,7 +22,7 @@ function Footer() {
           <img src="/favicon.ico" className="lg:h-24 lg:w-fit w-1/6 self-center" />
           <h1 className="self-center p-2 lg:text-4xl text-3xl font-bold font-[poppins]">Trippayer</h1>
         </div>
-        <p className="my-4 lg:w-11/12 text-lg lg:text-2xl">Trippayer is a payment gateway which can be used to make payment for trips in nigeria</p>
+        <p className="my-4 lg:w-11/12 text-md lg:text-2xl">Trippayer is a payment gateway which can be used to make payment for trips in nigeria</p>
 
         <div className="flex lg:mt-10 mt-5 space-x-4 ">
           <a href="https://www.instagram.com/trippayer/">{instagram}</a>

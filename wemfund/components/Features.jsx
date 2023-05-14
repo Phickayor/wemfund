@@ -7,7 +7,7 @@ function Features() {
     AOS.init()
   }, [])
   return (
-    <div className="font-[poppins] my-20 mx-auto w-10/12 flex flex-col lg:flex-row text-textcolor space-y-10 lg:space-y-0 space-x-0 lg:space-x-10">
+    <div className="font-[poppins] my-10 lg:my-20 mx-auto w-10/12 flex flex-col lg:flex-row text-textcolor space-y-10 lg:space-y-0 space-x-0 lg:space-x-10">
       <div
         data-aos="fade-up"
         data-aos-duration="500"

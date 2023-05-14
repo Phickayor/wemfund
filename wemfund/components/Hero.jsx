@@ -8,7 +8,7 @@ function Hero() {
 
   return (
     <div className="text-darkblue text-center">
-      <div className="flex flex-col justify-center py-4 lg:px-10 px-5 my-10">
+      <div className="flex flex-col justify-center py-4 lg:px-10 px-5 lg:my-10">
         <div className="lg:w-1/2 px-5 w-5/6 self-center space-y-5">
           <h1 className="lg:text-6xl text-3xl font-semibold lg:leading-[72px] font-[poppins]">
             Pay Ride <br /> With Ease
@@ -35,12 +35,12 @@ function Hero() {
         </p>
 
         <div
-          className="flex justify-center my-5 "
+          className="grid grid-cols-2 gap-8 my-5 "
           data-aos="fade-down"
           data-aos-duration="1000"
         >
-          <img src="/PlayStore.png" className="lg:mx-4 m-2 rounded-3xl" />
-          <img src="/AppStore.png" className="lg:mx-4 m-2 rounded-3xl" />
+          <img src="/PlayStore.png" className="rounded-lg object-fit" />
+          <img src="/AppStore.png" className=" rounded-lg object-fit" />
         </div>
       </div>
     </div>
