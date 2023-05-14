@@ -31,12 +31,12 @@ function NavBar(props) {
   }
 
   return (
-    <div className="text-textcolor sticky bg-white font-[poppins] z-10 top-0 md:p-3 p-2 flex justify-between ">
-      <div className="flex md:px-10 ">
-        <img src="/favicon.ico" className="md:h-24 md:w-full w-1/6 self-center" />
-        <h1 className="self-center p-2 text-3xl font-semibold font-[poppins]">Trippayer</h1>
+    <div className="text-textcolor sticky bg-white font-[poppins] z-10 top-0 lg:p-3 p-2 flex justify-between ">
+      <div className="flex lg:px-10 ">
+        <img src="/favicon.ico" className="lg:h-24 lg:w-full w-1/6 self-center" />
+        <h1 className="self-center p-2 lg:text-3xl text-xl font-semibold font-[poppins]">Trippayer</h1>
       </div>
-      <ul className="md:flex hidden space-x-10 font-semibold text-xl px-10 self-center">
+      <ul className="lg:flex hidden space-x-10 font-semibold text-xl px-10 self-center">
         {navigations.map((nav, index) => (
           <Link href={nav.href} key={index}>
             <li className="hover:list-disc">{nav.name}</li>
@@ -44,7 +44,7 @@ function NavBar(props) {
         ))}
       </ul>
       <div
-        className="md:hidden self-center cursor-pointer"
+        className="lg:hidden self-center cursor-pointer"
         onClick={() => toggleSideBar()}
       >
         {harmburger}

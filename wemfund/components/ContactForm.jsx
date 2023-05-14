@@ -1,4 +1,4 @@
-import { faFacebook, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelope,
   faMapMarker,
@@ -24,9 +24,6 @@ function ContactForm() {
     <FontAwesomeIcon icon={faInstagram} className="font-semibold text-4xl" />
   ); const linkedin = (
     <FontAwesomeIcon icon={faLinkedinIn} className="font-semibold text-4xl" />
-  );
-  const twitter = (
-    <FontAwesomeIcon icon={faTwitter} className="font-semibold text-4xl" />
   );
   const [Status, setStatus] = useState()
   const [load, setLoad] = useState()
@@ -67,13 +64,13 @@ function ContactForm() {
 
   }
   return (
-    <div className="my-10 mx-auto md:w-10/12 w-11/12 flex md:flex-row flex-col justify-around font-[poppins]">
-      <div className="px-10 md:w-1/2"
+    <div className="lg:my-10 my-5 mx-auto lg:w-10/12 w-11/12 flex lg:flex-row flex-col justify-around font-[poppins]">
+      <div className="px-5 lg:px-10 lg:w-1/2"
         data-aos="fade-right"
         data-aos-duration="1000"
       >
-        <div className="mx-auto md:w-10/12 my-10 h-full">
-          <h1 className="font-bold text-darkblue md:text-4xl text-2xl my-4">Contact Us</h1>
+        <div className="mx-auto lg:w-10/12 my-10 h-full">
+          <h1 className="font-bold text-darkblue lg:text-4xl text-2xl my-4">Contact Us</h1>
           <p className="text-textcolor text-xl">
             Fill up the form and get a response from our team within 24 hours
           </p>
@@ -84,18 +81,17 @@ function ContactForm() {
           </ul>
           <div className="flex space-x-6">
             <a href="https://www.instagram.com/trippayer/">{instagram}</a>
-            <a href="">{twitter}</a>
             <a href="">{linkedin}</a>
           </div>
         </div>
       </div>
 
       <div
-        className="md:w-1/2 text-white md:text-2xl text-xl"
+        className="lg:w-1/2 text-white lg:text-2xl text-xl"
         data-aos="fade-left"
         data-aos-duration="1000"
       >
-        <form className="bg-darkblue px-10 md:py-20 py-10 rounded-2xl mx-auto md:w-10/12 h-fit" onSubmit={HandleSubmit}>
+        <form className="bg-darkblue px-10 lg:py-20 py-10 rounded-2xl mx-auto lg:w-10/12 h-fit" onSubmit={HandleSubmit}>
           <label className="">Name</label>
           <input
             className="text-textcolor rounded-md block p-2 my-3 w-full"
