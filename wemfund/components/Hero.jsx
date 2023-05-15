@@ -35,7 +35,7 @@ function Hero() {
         </p>
 
         <div
-          className="grid grid-cols-2 gap-8 my-5 "
+          className="grid grid-cols-2 lg:gap-8 gap-6 my-5 lg:px-0 px-10 mx-auto"
           data-aos="fade-down"
           data-aos-duration="1000"
         >
