@@ -25,7 +25,6 @@ function ContactForm() {
   ); const linkedin = (
     <FontAwesomeIcon icon={faLinkedinIn} className="font-semibold text-4xl" />
   );
-  const [Status, setStatus] = useState()
   const [load, setLoad] = useState()
   function HandleSubmit(e) {
     e.preventDefault()
@@ -46,15 +45,14 @@ function ContactForm() {
       }
       ).then(function (data) {
         if (data.info === "success") {
-          setStatus(`Hey ${name}, your message has been delivered successfully`)
           nameContainer.current.value = " "
           mailContainer.current.value = " "
           messageContainer.current.value = " "
+          alert(`Hey ${name}, your message has been delivered successfully`)
         } else {
-          setStatus(`An error occured, check your internet connection`)
+          alert(`An error occured, check your internet connection`)
         }
         setLoad("")
-        alert(Status)
       })
       .catch((error) => {
         console.log(error)
