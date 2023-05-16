@@ -29,21 +29,21 @@ function terms() {
                             feedback or submit complaints to Trippayer.
                             By using this feature, you acknowledge and agree to the following:
                         </p>
-                        <ul className='space-y-4 w-11/12'>
-                            <li className='text-md leading-6'>
+                        <ul className='space-y-4 w-11/12 text-md leading-6'>
+                            <li>
                                 a.<b> Accuracy of Information:</b> You represent and warrant that the information you provide,
                                 including your name and email address, is accurate and truthful.
                             </li>
-                            <li className='text-md'>
+                            <li>
                                 b.<b> Consent to Communication:</b> By submitting feedback or a complaint, you consent to Trippayer
                                 contacting you via the email address provided for the purpose of resolving your feedback or complaint.
                             </li>
-                            <li className='text-md'>
+                            <li>
                                 c.<b> Confidentiality:</b> While Trippayer will take reasonable measures to protect the information
                                 you provide, you acknowledge that the transmission of information over the internet is not completely secure.
                                 Therefore, Trippayer cannot guarantee the absolute confidentiality of your information.
                             </li>
-                            <li className='text-md'>
+                            <li>
                                 d.<b> Non-Confidentiality of Feedback:</b> You acknowledge and agree that any feedback or suggestions
                                 you provide to Trippayer through the Website may be used by Trippayer without any obligation to
                                 compensate you or maintain the confidentiality of such feedback.
