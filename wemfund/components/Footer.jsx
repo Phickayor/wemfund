@@ -3,6 +3,7 @@ import { faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-s
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 
 function Footer() {
   useEffect(() => {
@@ -41,8 +42,8 @@ function Footer() {
         <div className="lg:my-4  lg:space-y-10">
           <h1 className="text-lg lg:text-3xl my-4 ">Quick Links</h1>
           <ul className="lg:space-y-4 space-y-2 font-medium text-sm lg:text-2xl whitespace-nowrap">
-            <li>Terms and Conditions</li>
-            <li>Privacy Policy</li>
+            <Link href="/terms"><li>Terms and Conditions</li></Link>
+            <Link href=""><li>Privacy Policy</li></Link>
           </ul>
         </div>
         <div className="lg:my-4 lg:space-y-10">
