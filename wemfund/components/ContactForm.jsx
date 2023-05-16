@@ -33,7 +33,7 @@ function ContactForm() {
     var name = nameContainer.current.value
     var email = mailContainer.current.value
     var message = messageContainer.current.value
-    fetch("https://rich-cuff-links-fish.cyclic.app/message", {
+    fetch("https://trippayer.onrender.com/message", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
