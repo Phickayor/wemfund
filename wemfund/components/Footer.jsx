@@ -43,7 +43,7 @@ function Footer() {
           <h1 className="text-lg lg:text-3xl my-4 ">Quick Links</h1>
           <ul className="lg:space-y-4 space-y-2 font-medium text-sm lg:text-2xl whitespace-nowrap">
             <Link href="/terms"><li>Terms and Conditions</li></Link>
-            <Link href=""><li>Privacy Policy</li></Link>
+            <Link href="/privacy-policy"><li>Privacy Policy</li></Link>
           </ul>
         </div>
         <div className="lg:my-4 lg:space-y-10">
