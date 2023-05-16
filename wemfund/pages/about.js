@@ -16,7 +16,8 @@ function about() {
     <div>
       <Head>
         <title>About Trippayer</title>
-        <meta name="description" content="Payment for trips" />
+        <meta name="keywords" content="about, vision, download, app, application" />
+        <meta name="description" content="Who we are and what we do at Trippayer" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

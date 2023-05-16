@@ -15,7 +15,8 @@ function contact() {
     <div>
       <Head>
         <title>Trippayer | Contact</title>
-        <meta name="description" content="Payment for trips" />
+        <meta name="keywords" content="contact, enquiry, issues, feedback" />
+        <meta name="description" content="You can reach out to us at Trippayer here" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
