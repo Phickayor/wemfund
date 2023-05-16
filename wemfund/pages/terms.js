@@ -6,12 +6,12 @@ function terms() {
     return (
         <>
             <NavBar firstNav={"Home"} firstNavLink={"/"} secondNav={"About"} secondNavLink={"/about"} />
-            <div className='mx-auto w-10/12 my-10 font-[poppins] '>
+            <div className='mx-auto w-11/12 lg:w-10/12 my-10 font-[poppins] '>
                 <h3 className='text-3xl font-bold my-10'>Terms Of Service</h3>
                 <div className='space-y-8'>
                     <h3 className='text-2xl font-semibold mt-5'>Effective Date: 16th May 2023</h3>
                     <p className='text-lg'>
-                        These Terms of Service ("Terms") govern your use of Trippaye website ("Website")
+                        These Terms of Service ("Terms") govern your use of Trippayer website ("Website")
                         and the services provided through the Website. By accessing or using the Website,
                         you agree to be bound by these Terms. If you do not agree to these Terms, please do not use the Website.
                     </p>
