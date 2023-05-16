@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -14,6 +14,9 @@ function Footer() {
   const linkedin = (
     <FontAwesomeIcon icon={faLinkedinIn} className="font-semibold text-2xl self-center lg:text-4xl " />
   );
+  const twitter = (
+    <FontAwesomeIcon icon={faTwitter} className="font-semibold text-2xl self-center lg:text-4xl " />
+  );
   return (
     <div className="bg-darkblue h-full border-white border-t-2 lg:px-10 p-5 lg:py-5 flex flex-col-reverse lg:flex-row text-white">
 
@@ -26,7 +29,8 @@ function Footer() {
 
         <div className="flex lg:mt-10 space-x-4 ">
           <a href="https://www.instagram.com/trippayer/" className="bg-purple px-2 py-1 hover:bg-inherit rounded-full">{instagram}</a>
-          <a href="" className="bg-purple px-2 py-1 hover:bg-inherit rounded-full">{linkedin}</a>
+          <a href="https://www.linkedin.com/in/trippayer-812955276/" className="bg-purple px-2 py-1 hover:bg-inherit rounded-full">{linkedin}</a>
+          <a href="https://www.twitter.com/trippayer" className="bg-purple px-2 py-1 hover:bg-inherit rounded-full">{twitter}</a>
         </div>
       </div>
       <div

@@ -1,4 +1,4 @@
-import { faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelope,
   faMapMarker,
@@ -24,6 +24,9 @@ function ContactForm() {
     <FontAwesomeIcon icon={faInstagram} className="font-semibold text-4xl" />
   ); const linkedin = (
     <FontAwesomeIcon icon={faLinkedinIn} className="font-semibold text-4xl" />
+  );
+  const twitter = (
+    <FontAwesomeIcon icon={faTwitter} className="font-semibold text-4xl" />
   );
   const [load, setLoad] = useState()
   function HandleSubmit(e) {
@@ -79,7 +82,8 @@ function ContactForm() {
           </ul>
           <div className="flex space-x-6">
             <a href="https://www.instagram.com/trippayer/">{instagram}</a>
-            <a href="">{linkedin}</a>
+            <a href="https://www.linkedin.com/in/trippayer-812955276/">{linkedin}</a>
+            <a href="https://www.twitter.com/trippayer">{twitter}</a>
           </div>
         </div>
       </div>
