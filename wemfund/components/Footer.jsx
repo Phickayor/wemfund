@@ -50,8 +50,8 @@ function Footer() {
           <h1 className="text-lg lg:text-3xl my-4">Supports</h1>
           <ul className="text-sm lg:text-2xl space-y-2 lg:space-y-4 font-medium">
             <li>Help</li>
-            <li>Contact us</li>
-            <li>Cookie Policy</li>
+            <Link href="/contact"><li>Contact us</li></Link>
+            <Link href="/cookie-policy"><li>Cookie Policy</li></Link>
           </ul>
         </div>
       </div>
