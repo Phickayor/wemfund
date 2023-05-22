@@ -49,7 +49,6 @@ function Footer() {
         <div className="lg:my-4 lg:space-y-10">
           <h1 className="text-lg lg:text-3xl my-4">Supports</h1>
           <ul className="text-sm lg:text-2xl space-y-2 lg:space-y-4 font-medium">
-            <li>Help</li>
             <Link href="/contact"><li>Contact us</li></Link>
             <Link href="/cookie-policy"><li>Cookie Policy</li></Link>
           </ul>
