@@ -12,7 +12,6 @@ function About() {
         About Trippayer
       </h1>
       <p
-
         data-aos="zoom-in"
         data-aos-duration="1000"
         className="lg:text-5xl text-2xl text-textcolor font-light"

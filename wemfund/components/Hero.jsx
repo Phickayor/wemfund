@@ -26,22 +26,32 @@ function Hero() {
         </div>
 
         <p
-          className="mt-10 font-semibold text-3xl lg:text-6xl lg:leading-[70px] "
+          className="mt-10 font-semibold text-3xl lg:text-6xl lg:leading-[70px] mx-auto w-10/12"
           data-aos="fade-down"
           data-aos-duration="1000"
-        >
-          Easy <b className="text-purple font-semibold">Payment for trips </b><br />
-          Sign up for <b className="text-purple font-semibold">free </b>now!
+        >We help <b className="text-purple font-semibold">riders</b> accept <b className="text-purple font-semibold">payments</b>,
+          Book <b className="text-purple font-semibold">rides</b>,Scan to
+          <b className="text-purple font-semibold"> pay</b>, Earn
+          <b className="text-purple font-semibold"> token 🔽</b>.
+          {/* Easy <b className="text-purple font-semibold">Payment for trips </b><br />
+          Sign up for <b className="text-purple font-semibold">free </b>now! */}
         </p>
-
-        <div
+        {/* Temporary Download Link for Test Phase */}
+        <a href="https://expo.dev/artifacts/eas/41uy7fFV5BbSXCELkNPUtH.apk">
+          <button className=" mx-auto w-fit bg-darkblue text-white font-medium text-2xl px-10 py-3 mt-5 md:mt-10 font-[poppins] rounded-xl">
+            Download app
+          </button>
+        </a>
+        {/* Play Store and App Store download links */}
+        {/* <div
           className="grid grid-cols-2 lg:gap-8 gap-6 my-5 lg:px-0 px-10 mx-auto"
           data-aos="fade-down"
           data-aos-duration="1000"
         >
           <img src="/PlayStore.png" className="rounded-lg object-fit" />
           <img src="/AppStore.png" className=" rounded-lg object-fit" />
-        </div>
+        </div> */}
+
       </div>
     </div>
   );

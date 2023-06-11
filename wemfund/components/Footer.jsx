@@ -35,7 +35,7 @@ function Footer() {
         </div>
       </div>
       <div
-        className="flex justify-around w-full font-[pon....ppins] py-5 lg:py-10"
+        className="flex justify-around w-full font-[poppins] py-5 lg:py-10"
         data-aos="fade-up"
         data-aos-duration="700"
       >
