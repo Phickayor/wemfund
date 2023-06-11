@@ -38,7 +38,7 @@ function Hero() {
         </p>
         {/* Temporary Download Link for Test Phase */}
         <a href="https://expo.dev/artifacts/eas/41uy7fFV5BbSXCELkNPUtH.apk">
-          <button className=" mx-auto w-fit bg-darkblue text-white font-medium text-2xl px-10 py-3 mt-5 md:mt-10 font-[poppins] rounded-xl">
+          <button className=" mx-auto w-fit bg-darkblue text-white font-medium text-2xl hover:scale-110 px-10 py-3 mt-5 md:mt-10 font-[poppins] rounded-xl">
             Download app
           </button>
         </a>
